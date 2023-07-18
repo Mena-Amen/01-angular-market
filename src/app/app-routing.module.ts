@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AllProductsComponent } from './products/components/all-products/all-products.component';
 import { ProductsDetailsComponent } from './products/components/products-details/products-details.component';
 import { CartComponent } from './carts/components/cart/cart.component';
+import { AdminAllProdsComponent } from './admin-products/components/admin-all-prods/admin-all-prods.component';
 
 const routes: Routes = [
   { path: 'products', component: AllProductsComponent },
   { path: 'details/:id', component: ProductsDetailsComponent },
   { path: 'cart', component: CartComponent },
-  { path: '**', redirectTo: 'cart', pathMatch: 'full' },
+  { path: 'admin-prods', component: AdminAllProdsComponent },
+  { path: '**', redirectTo: 'products', pathMatch: 'full' },
 ];
 
 @NgModule({

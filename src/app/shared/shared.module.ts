@@ -24,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SelectComponent,
     FormsModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
 })
 export class SharedModule {}
